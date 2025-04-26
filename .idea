@@ -1,0 +1,6 @@
+micro kernel project
+
+Some of things that the micro kernel offer to you:
+    - Memory management
+    - Process scheduling
+    - inter process comunication
