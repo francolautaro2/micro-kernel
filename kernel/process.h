@@ -1,3 +1,5 @@
+#include <stdint.h>
+
 typedef struct process {
     int pid;
     void (*entry_point)();
