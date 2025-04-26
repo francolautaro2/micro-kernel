@@ -5,7 +5,7 @@
 static process *current = NULL;
 static process *head = NULL;
 
-void add_scheduler(struct process *proc) {
+void scheduler_add(struct process *proc) {
     if (!head){
         head = proc;
         proc->next=proc;
@@ -15,11 +15,11 @@ void add_scheduler(struct process *proc) {
     }
 }
 
-void init_scheduler() {
+void scheduler_init() {
     current = head;
 }
 
-void start_scheduler() {
+void scheduler_start() {
     while (1) {
         if (current){
             current->entry_point();

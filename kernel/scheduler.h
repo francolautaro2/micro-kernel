@@ -1,5 +1,4 @@
 #include "process.h"
 
-void scheduler_init();
-void scheduler_start();
-void switch_to(struct process p);
+void init_scheduler();
+void start_scheduler();
